@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  ZendeskTest
+
+  Created by Marc Dermejian on 29/11/2016.
+  Copyright © 2016 Marc Dermejian. All rights reserved.
+*/
+
+"Ticket_Title" = "Tickets";
+"Network_Error_Message_Title" = "Error";
+"Network_Error_Message_Body" = "Something went wrong :-(";
+"OK_Action" = "OK";

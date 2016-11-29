@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A2A95CCD81E9807D4AA7AFB /* Pods_ZendeskTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC090A8FAA27E46966E0BD3 /* Pods_ZendeskTest.framework */; };
+		80C515581DEDD8C400E05B92 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80C5155A1DEDD8C400E05B92 /* Localizable.strings */; };
+		80FC03E01DE9B47F000736F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC03DF1DE9B47F000736F4 /* AppDelegate.swift */; };
+		80FC03E51DE9B47F000736F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FC03E31DE9B47F000736F4 /* Main.storyboard */; };
+		80FC03E71DE9B47F000736F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80FC03E61DE9B47F000736F4 /* Assets.xcassets */; };
+		80FC03EA1DE9B47F000736F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FC03E81DE9B47F000736F4 /* LaunchScreen.storyboard */; };
+		80FC03F51DE9B47F000736F4 /* ZendeskTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC03F41DE9B47F000736F4 /* ZendeskTestTests.swift */; };
+		80FC04011DE9BB80000736F4 /* TicketRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC04001DE9BB80000736F4 /* TicketRouter.swift */; };
+		80FC04031DE9DC45000736F4 /* GetAllTicketsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC04021DE9DC45000736F4 /* GetAllTicketsResponse.swift */; };
+		80FC04051DE9DCFC000736F4 /* ResponseObjectSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC04041DE9DCFC000736F4 /* ResponseObjectSerializable.swift */; };
+		80FC04071DE9DD49000736F4 /* ResponseCollectionSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC04061DE9DD49000736F4 /* ResponseCollectionSerializable.swift */; };
+		80FC04091DE9DD93000736F4 /* ZDError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC04081DE9DD93000736F4 /* ZDError.swift */; };
+		80FC040B1DE9E0D1000736F4 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC040A1DE9E0D1000736F4 /* Ticket.swift */; };
+		80FC040D1DE9E66F000736F4 /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC040C1DE9E66F000736F4 /* CustomStringConvertible.swift */; };
+		80FC040F1DE9E6B3000736F4 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC040E1DE9E6B3000736F4 /* Utility.swift */; };
+		80FC04111DE9F8DB000736F4 /* TicketStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC04101DE9F8DB000736F4 /* TicketStatus.swift */; };
+		80FC04131DE9F8ED000736F4 /* TicketPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC04121DE9F8ED000736F4 /* TicketPriority.swift */; };
+		80FC04151DEA531D000736F4 /* TicketEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC04141DEA531D000736F4 /* TicketEndpoint.swift */; };
+		80FC04171DEA546B000736F4 /* TicketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC04161DEA546B000736F4 /* TicketManager.swift */; };
+		80FC04191DEA5F6D000736F4 /* TicketsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC04181DEA5F6D000736F4 /* TicketsTableViewController.swift */; };
+		80FC041B1DEA61FE000736F4 /* APIConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC041A1DEA61FE000736F4 /* APIConfigurator.swift */; };
+		80FC041D1DEA62E3000736F4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC041C1DEA62E3000736F4 /* Constants.swift */; };
+		80FC041F1DEA65F6000736F4 /* TicketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC041E1DEA65F6000736F4 /* TicketCell.swift */; };
+		909BA265A3E39E4C2E5BEF21 /* Pods_ZendeskTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C409AE0B5A21E84B8A188427 /* Pods_ZendeskTestTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80FC03F11DE9B47F000736F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80FC03D41DE9B47F000736F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80FC03DB1DE9B47F000736F4;
+			remoteInfo = ZendeskTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BF0BEF8CB850501011D442C /* Pods-ZendeskTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZendeskTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZendeskTest/Pods-ZendeskTest.debug.xcconfig"; sourceTree = "<group>"; };
+		18DCC39ABA224F110AF1AD53 /* Pods-ZendeskTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZendeskTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZendeskTestTests/Pods-ZendeskTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		677433FEE3C894E949B0B7B9 /* Pods-ZendeskTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZendeskTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZendeskTest/Pods-ZendeskTest.release.xcconfig"; sourceTree = "<group>"; };
+		6CC090A8FAA27E46966E0BD3 /* Pods_ZendeskTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZendeskTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C5155B1DEDD8C800E05B92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		80FC03DC1DE9B47F000736F4 /* ZendeskTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZendeskTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80FC03DF1DE9B47F000736F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80FC03E41DE9B47F000736F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80FC03E61DE9B47F000736F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80FC03E91DE9B47F000736F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80FC03EB1DE9B47F000736F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80FC03F01DE9B47F000736F4 /* ZendeskTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZendeskTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80FC03F41DE9B47F000736F4 /* ZendeskTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZendeskTestTests.swift; sourceTree = "<group>"; };
+		80FC03F61DE9B47F000736F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80FC04001DE9BB80000736F4 /* TicketRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketRouter.swift; sourceTree = "<group>"; };
+		80FC04021DE9DC45000736F4 /* GetAllTicketsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllTicketsResponse.swift; sourceTree = "<group>"; };
+		80FC04041DE9DCFC000736F4 /* ResponseObjectSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObjectSerializable.swift; sourceTree = "<group>"; };
+		80FC04061DE9DD49000736F4 /* ResponseCollectionSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCollectionSerializable.swift; sourceTree = "<group>"; };
+		80FC04081DE9DD93000736F4 /* ZDError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDError.swift; sourceTree = "<group>"; };
+		80FC040A1DE9E0D1000736F4 /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		80FC040C1DE9E66F000736F4 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStringConvertible.swift; sourceTree = "<group>"; };
+		80FC040E1DE9E6B3000736F4 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		80FC04101DE9F8DB000736F4 /* TicketStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketStatus.swift; sourceTree = "<group>"; };
+		80FC04121DE9F8ED000736F4 /* TicketPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketPriority.swift; sourceTree = "<group>"; };
+		80FC04141DEA531D000736F4 /* TicketEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketEndpoint.swift; sourceTree = "<group>"; };
+		80FC04161DEA546B000736F4 /* TicketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketManager.swift; sourceTree = "<group>"; };
+		80FC04181DEA5F6D000736F4 /* TicketsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsTableViewController.swift; sourceTree = "<group>"; };
+		80FC041A1DEA61FE000736F4 /* APIConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfigurator.swift; sourceTree = "<group>"; };
+		80FC041C1DEA62E3000736F4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		80FC041E1DEA65F6000736F4 /* TicketCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketCell.swift; sourceTree = "<group>"; };
+		C409AE0B5A21E84B8A188427 /* Pods_ZendeskTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZendeskTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4E68FECDA1A3F14D90FB8B /* Pods-ZendeskTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZendeskTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZendeskTestTests/Pods-ZendeskTestTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80FC03D91DE9B47F000736F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A2A95CCD81E9807D4AA7AFB /* Pods_ZendeskTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80FC03ED1DE9B47F000736F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				909BA265A3E39E4C2E5BEF21 /* Pods_ZendeskTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CFD0492A0D01D0124C8E9CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CC090A8FAA27E46966E0BD3 /* Pods_ZendeskTest.framework */,
+				C409AE0B5A21E84B8A188427 /* Pods_ZendeskTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A709073F650D2A1FB6721E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BF0BEF8CB850501011D442C /* Pods-ZendeskTest.debug.xcconfig */,
+				677433FEE3C894E949B0B7B9 /* Pods-ZendeskTest.release.xcconfig */,
+				18DCC39ABA224F110AF1AD53 /* Pods-ZendeskTestTests.debug.xcconfig */,
+				EE4E68FECDA1A3F14D90FB8B /* Pods-ZendeskTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		80FB4A631DEC9BD300FEB502 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				80FC04081DE9DD93000736F4 /* ZDError.swift */,
+				80FC04161DEA546B000736F4 /* TicketManager.swift */,
+				80FC04141DEA531D000736F4 /* TicketEndpoint.swift */,
+				80FC04001DE9BB80000736F4 /* TicketRouter.swift */,
+				80FC04021DE9DC45000736F4 /* GetAllTicketsResponse.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		80FB4A641DEC9BE500FEB502 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80FC040A1DE9E0D1000736F4 /* Ticket.swift */,
+				80FC04101DE9F8DB000736F4 /* TicketStatus.swift */,
+				80FC04121DE9F8ED000736F4 /* TicketPriority.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		80FB4A651DEC9C2B00FEB502 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				80FB4A681DEC9F7000FEB502 /* Tickets VC */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		80FB4A661DEC9C4500FEB502 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				80FC03DF1DE9B47F000736F4 /* AppDelegate.swift */,
+				80FC040E1DE9E6B3000736F4 /* Utility.swift */,
+				80FC041C1DEA62E3000736F4 /* Constants.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		80FB4A671DEC9CEC00FEB502 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				80FC03E31DE9B47F000736F4 /* Main.storyboard */,
+				80FC03E61DE9B47F000736F4 /* Assets.xcassets */,
+				80FC03E81DE9B47F000736F4 /* LaunchScreen.storyboard */,
+				80FC03EB1DE9B47F000736F4 /* Info.plist */,
+				80C5155A1DEDD8C400E05B92 /* Localizable.strings */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		80FB4A681DEC9F7000FEB502 /* Tickets VC */ = {
+			isa = PBXGroup;
+			children = (
+				80FC04181DEA5F6D000736F4 /* TicketsTableViewController.swift */,
+				80FC041E1DEA65F6000736F4 /* TicketCell.swift */,
+			);
+			name = "Tickets VC";
+			sourceTree = "<group>";
+		};
+		80FC03D31DE9B47F000736F4 = {
+			isa = PBXGroup;
+			children = (
+				80FC03DE1DE9B47F000736F4 /* ZendeskTest */,
+				80FC03F31DE9B47F000736F4 /* ZendeskTestTests */,
+				80FC03DD1DE9B47F000736F4 /* Products */,
+				4A709073F650D2A1FB6721E3 /* Pods */,
+				3CFD0492A0D01D0124C8E9CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		80FC03DD1DE9B47F000736F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80FC03DC1DE9B47F000736F4 /* ZendeskTest.app */,
+				80FC03F01DE9B47F000736F4 /* ZendeskTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80FC03DE1DE9B47F000736F4 /* ZendeskTest */ = {
+			isa = PBXGroup;
+			children = (
+				80FB4A661DEC9C4500FEB502 /* Common */,
+				80FC03FF1DE9B83F000736F4 /* Protocols */,
+				80FB4A641DEC9BE500FEB502 /* Model */,
+				80FB4A631DEC9BD300FEB502 /* Networking */,
+				80FB4A651DEC9C2B00FEB502 /* UI */,
+				80FB4A671DEC9CEC00FEB502 /* Support Files */,
+			);
+			path = ZendeskTest;
+			sourceTree = "<group>";
+		};
+		80FC03F31DE9B47F000736F4 /* ZendeskTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				80FC03F41DE9B47F000736F4 /* ZendeskTestTests.swift */,
+				80FC03F61DE9B47F000736F4 /* Info.plist */,
+			);
+			path = ZendeskTestTests;
+			sourceTree = "<group>";
+		};
+		80FC03FF1DE9B83F000736F4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				80FC04041DE9DCFC000736F4 /* ResponseObjectSerializable.swift */,
+				80FC04061DE9DD49000736F4 /* ResponseCollectionSerializable.swift */,
+				80FC040C1DE9E66F000736F4 /* CustomStringConvertible.swift */,
+				80FC041A1DEA61FE000736F4 /* APIConfigurator.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80FC03DB1DE9B47F000736F4 /* ZendeskTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80FC03F91DE9B47F000736F4 /* Build configuration list for PBXNativeTarget "ZendeskTest" */;
+			buildPhases = (
+				7D8E1FFB1D52A48CC1522DDB /* [CP] Check Pods Manifest.lock */,
+				80FC03D81DE9B47F000736F4 /* Sources */,
+				80FC03D91DE9B47F000736F4 /* Frameworks */,
+				80FC03DA1DE9B47F000736F4 /* Resources */,
+				B965FBFBA357AFD09D1113F7 /* [CP] Embed Pods Frameworks */,
+				06B2F0C04AA53C29DD44ECB8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZendeskTest;
+			productName = ZendeskTest;
+			productReference = 80FC03DC1DE9B47F000736F4 /* ZendeskTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80FC03EF1DE9B47F000736F4 /* ZendeskTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80FC03FC1DE9B47F000736F4 /* Build configuration list for PBXNativeTarget "ZendeskTestTests" */;
+			buildPhases = (
+				94631158BD90A73CCC0F0CF8 /* [CP] Check Pods Manifest.lock */,
+				80FC03EC1DE9B47F000736F4 /* Sources */,
+				80FC03ED1DE9B47F000736F4 /* Frameworks */,
+				80FC03EE1DE9B47F000736F4 /* Resources */,
+				859F2A42C68FED04D0EB46F8 /* [CP] Embed Pods Frameworks */,
+				A776524A55315E4B1F8B41CA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80FC03F21DE9B47F000736F4 /* PBXTargetDependency */,
+			);
+			name = ZendeskTestTests;
+			productName = ZendeskTestTests;
+			productReference = 80FC03F01DE9B47F000736F4 /* ZendeskTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80FC03D41DE9B47F000736F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Marc Dermejian";
+				TargetAttributes = {
+					80FC03DB1DE9B47F000736F4 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9S848SD496;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					80FC03EF1DE9B47F000736F4 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9S848SD496;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 80FC03DB1DE9B47F000736F4;
+					};
+				};
+			};
+			buildConfigurationList = 80FC03D71DE9B47F000736F4 /* Build configuration list for PBXProject "ZendeskTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80FC03D31DE9B47F000736F4;
+			productRefGroup = 80FC03DD1DE9B47F000736F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80FC03DB1DE9B47F000736F4 /* ZendeskTest */,
+				80FC03EF1DE9B47F000736F4 /* ZendeskTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80FC03DA1DE9B47F000736F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FC03EA1DE9B47F000736F4 /* LaunchScreen.storyboard in Resources */,
+				80C515581DEDD8C400E05B92 /* Localizable.strings in Resources */,
+				80FC03E71DE9B47F000736F4 /* Assets.xcassets in Resources */,
+				80FC03E51DE9B47F000736F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80FC03EE1DE9B47F000736F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06B2F0C04AA53C29DD44ECB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZendeskTest/Pods-ZendeskTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D8E1FFB1D52A48CC1522DDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		859F2A42C68FED04D0EB46F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZendeskTestTests/Pods-ZendeskTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94631158BD90A73CCC0F0CF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A776524A55315E4B1F8B41CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZendeskTestTests/Pods-ZendeskTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B965FBFBA357AFD09D1113F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZendeskTest/Pods-ZendeskTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80FC03D81DE9B47F000736F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FC04111DE9F8DB000736F4 /* TicketStatus.swift in Sources */,
+				80FC040F1DE9E6B3000736F4 /* Utility.swift in Sources */,
+				80FC04091DE9DD93000736F4 /* ZDError.swift in Sources */,
+				80FC04051DE9DCFC000736F4 /* ResponseObjectSerializable.swift in Sources */,
+				80FC041F1DEA65F6000736F4 /* TicketCell.swift in Sources */,
+				80FC04131DE9F8ED000736F4 /* TicketPriority.swift in Sources */,
+				80FC040B1DE9E0D1000736F4 /* Ticket.swift in Sources */,
+				80FC04031DE9DC45000736F4 /* GetAllTicketsResponse.swift in Sources */,
+				80FC041D1DEA62E3000736F4 /* Constants.swift in Sources */,
+				80FC040D1DE9E66F000736F4 /* CustomStringConvertible.swift in Sources */,
+				80FC04191DEA5F6D000736F4 /* TicketsTableViewController.swift in Sources */,
+				80FC04071DE9DD49000736F4 /* ResponseCollectionSerializable.swift in Sources */,
+				80FC041B1DEA61FE000736F4 /* APIConfigurator.swift in Sources */,
+				80FC03E01DE9B47F000736F4 /* AppDelegate.swift in Sources */,
+				80FC04151DEA531D000736F4 /* TicketEndpoint.swift in Sources */,
+				80FC04011DE9BB80000736F4 /* TicketRouter.swift in Sources */,
+				80FC04171DEA546B000736F4 /* TicketManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80FC03EC1DE9B47F000736F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FC03F51DE9B47F000736F4 /* ZendeskTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80FC03F21DE9B47F000736F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80FC03DB1DE9B47F000736F4 /* ZendeskTest */;
+			targetProxy = 80FC03F11DE9B47F000736F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80C5155A1DEDD8C400E05B92 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80C5155B1DEDD8C800E05B92 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		80FC03E31DE9B47F000736F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80FC03E41DE9B47F000736F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80FC03E81DE9B47F000736F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80FC03E91DE9B47F000736F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80FC03F71DE9B47F000736F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80FC03F81DE9B47F000736F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80FC03FA1DE9B47F000736F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BF0BEF8CB850501011D442C /* Pods-ZendeskTest.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9S848SD496;
+				INFOPLIST_FILE = ZendeskTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zendesk.ZendeskTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		80FC03FB1DE9B47F000736F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 677433FEE3C894E949B0B7B9 /* Pods-ZendeskTest.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9S848SD496;
+				INFOPLIST_FILE = ZendeskTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zendesk.ZendeskTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		80FC03FD1DE9B47F000736F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18DCC39ABA224F110AF1AD53 /* Pods-ZendeskTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9S848SD496;
+				INFOPLIST_FILE = ZendeskTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zendesk.ZendeskTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZendeskTest.app/ZendeskTest";
+			};
+			name = Debug;
+		};
+		80FC03FE1DE9B47F000736F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE4E68FECDA1A3F14D90FB8B /* Pods-ZendeskTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9S848SD496;
+				INFOPLIST_FILE = ZendeskTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zendesk.ZendeskTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZendeskTest.app/ZendeskTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80FC03D71DE9B47F000736F4 /* Build configuration list for PBXProject "ZendeskTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80FC03F71DE9B47F000736F4 /* Debug */,
+				80FC03F81DE9B47F000736F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80FC03F91DE9B47F000736F4 /* Build configuration list for PBXNativeTarget "ZendeskTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80FC03FA1DE9B47F000736F4 /* Debug */,
+				80FC03FB1DE9B47F000736F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80FC03FC1DE9B47F000736F4 /* Build configuration list for PBXNativeTarget "ZendeskTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80FC03FD1DE9B47F000736F4 /* Debug */,
+				80FC03FE1DE9B47F000736F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80FC03D41DE9B47F000736F4 /* Project object */;
+}
